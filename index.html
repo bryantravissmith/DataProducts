@@ -34,7 +34,7 @@
   <hgroup class="auto-fadein">
     <h1>Kinematic Plots</h1>
     <h2>Showing the Change</h2>
-    <p>Bryan Travis Smith, PhD<br/>Lover of Life</p>
+    <p>Bryan Travis Smith, PhD<br/>Physics Teacher</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,13 +43,16 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>The Problem</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+    <p>Almost all physics classes show the following equations:</p>
+
+<ol>
+<li>\[x_f = x_i + v_i t + \frac{1}{2} a t^2\]</li>
+<li>\[v_f = v_i + a t\]</li>
+<li>\[\Delta x = \frac{1}{2} \left( v_i + v_f \right) t\]</li>
+<li>\[v^2_f = v^2_i + 2 x \Delta x\]</li>
 </ol>
 
   </article>
@@ -58,8 +61,45 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Inadequate Solutions</h2>
   </hgroup>
+  <article data-timings="">
+    <p>Flashing plots of kinemeatics data for different situations is pretty common  This shows the height of the ball as a function of time that is thrown straight up with 10 m/s.  </p>
+
+<p>Mastered it yet?</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Showing The Change</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src = 'https://bryantravissmith.shinyapps.io/1DKin/' height='600px'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Feel Free to Share</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>With the shiny 1DKinPlot app student can finally see how changing the variables change
+the resultings plots and behaviors of objects in 1D motion.   </p>
+
+<p><a href="https://bryantravissmith.shinyapps.io/1DKin/">https://bryantravissmith.shinyapps.io/1DKin/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
   <article data-timings="">
     
   </article>
@@ -72,14 +112,32 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='The Problem'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Inadequate Solutions'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Showing The Change'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Feel Free to Share'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
       </a>
     </li>
   </ul>
@@ -92,7 +150,21 @@
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
